@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Rubik",sans-serif;
+  position: relative;
+}
+
+html{
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.container{
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all .1s linear;
+}
+
+.btn:hover{
+    transform: scale(1.01);
+    background-color: #af050dfd;
+}
+
+.primary-heading{
+  font-size: 3rem;
+  color: white;
+  padding: 1.1rem 0;
+}
+
+.description{
+  font-size:1.2rem;
+  font-weight: 400;
+  color: white;
+  padding: 0rem 0 1.5rem 0;
+  line-height: 1.5;
+}
+
+/* Header section starts here*/
+.header-section{
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  ),url(../assets/img/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.header-section::after{
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background:rgba(0, 0, 0, 0.4);
+}
+
+.logo{
+  height: 2.915625rem;
+}
+
+.navbar{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  position: relative;
+  z-index: 1212;
+  z-index: 11;
+}
+
+.banner{
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 5rem;
+  z-index: 3;
+  text-align: center;
+  animation: slidedown .9s linear;
+}
+
+.banner-logo{
+  width: 15rem;
+  background-color: #06000052;
+}
+
+@keyframes slidedown{
+     0%{
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translateY(-10%);
+        opacity: .8;
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+
+.main-section{
+  width: 100%;
+  padding: 2rem 3rem;
+  background-color: black;
+}
+
+/* Header section ends here*/
+
+/* Watch section starts here*/
+
+.watch-section{
+  justify-content: space-between;
+  align-items: center;
+  padding:5rem 0;
+}
+
+.watch{
+  width: 45%;
+}
+
+.watch.watch-tv{
+  position: relative;
+} 
+
+.tv{
+    position: absolute;
+    width:73%;
+    top: 20%;
+    left:13%;
+    z-index: 3;
+}
+
+.tv .video{
+  width: 100%;
+}
+
+.watch .tv-img{
+  width: 100%;
+  position: relative;
+  z-index: 4;
+}
+
+/* Watch section ends here*/
+
+.netflix-banner-section{
+  width: 100%;
+  padding: 0 0 2rem 0;
+}
+
+.netflix-banner-section .banner-netflix{
+  width: 100%;
+}
+
+/*Trending section starts here*/
+
+.trending-section{
+   padding:5rem 0;
+}
+
+.trending-section .primary-heading{
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.trending-container{
+  width: 100%;
+}
+
+.trending-box{
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.trending-box .box{
+  width: 18rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s linear;
+  
+}
+
+.trending-box .box::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  background:rgba(27, 2, 5, 0.329);
+  top: 0;
+  left: 0;
+  
+}
+
+.container-2{
+  overflow: hidden;
+  width: 100%;
+  padding: 0 1rem;
+  position: absolute;
+  bottom: 143px;
+  z-index: 22323;
+}
+
+.container-2 .content{
+  transition:all .2s linear;
+  transform: translateY(55px);
+}
+
+.trending-box .box:hover .container-2 .content{
+  transform: translateY(0px);
+}
+
+.trending-box .box .heading{
+  width: 10.625rem;
+}
+
+ .description-text{
+  font-size: .9rem;
+  margin: .9rem 0;
+  color: white;
+  padding: 0 1rem;
+  position: absolute;
+  bottom:100px;
+  z-index: 232323;
+}
+
+.channel{
+  width:6.25rem;
+  position: absolute;
+  padding: 0 1rem;
+  bottom: 15px;
+  right: 0;
+  z-index: 23232;
+}
+
+.content .hide-text{
+  font-size: .9rem;
+  color: white;
+  font-weight: 300;
+  padding-top:10px;
+}
+
+
+.trending-box .box.drama-box-1{
+  background-image:linear-gradient(to top, rgb(34, 37, 195) 0%, rgba(29, 42, 184, 0.205) 20%),
+  url(../assets/img/Drama/drama-1.jfif);
+  
+}
+
+.trending-box .box.drama-box-2{
+  background-image:linear-gradient(to top, rgb(195, 34, 34) 0%, rgba(184, 29, 29, 0.205) 20%),url("../assets/img/Drama/drama-2.jfif");
+}
+
+.trending-box .box.drama-box-3{
+  background-image:linear-gradient(to top, rgb(15, 1, 9) 0%, rgba(11, 1, 15, 0.205) 20%), url("../assets/img/Drama/drama-3.jfif");
+}
+
+.trending-box .box.drama-box-4{
+  background-image:linear-gradient(to top, rgb(195, 34, 34) 0%, rgba(184, 29, 29, 0.205) 20%), url("../assets/img/Drama/drama-4.jfif");
+}
+
+/*Trending section ends here*/
+
+/*Footer section starts here*/
+
+.footer-section{
+  width: 100%;
+  background-color: black;
+  color: #757575;
+  padding: 2rem 3rem;
+}
+
+.footer-heading{
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.footer-conatiner{
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.link-box{
+  width: 24%;
+}
+
+.link-box .link{
+  display: block;
+  text-decoration: none;
+  color: #757575;
+  font-weight: 400;
+  font-size:1rem;
+  padding: 10px 0;
+}
+
+.footer-heading span{
+  font-weight: 600;
+  color :white;
+}
+
+/*Footer section ends here*/
+
+
