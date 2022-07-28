@@ -218,6 +218,11 @@ html{
   
 }
 
+.trending-box .box:hover{
+  outline-offset: 5px;
+  outline:4px solid rgba(135, 211, 216, 0.87);
+}
+
 .trending-box .box::after{
   content: "";
   position: absolute;
