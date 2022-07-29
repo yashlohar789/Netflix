@@ -44,8 +44,13 @@
         font-size: 12px;
     }
 
-    .banner{
+     .banner{
       top: 10rem;
+      padding: 0 1rem;
+    }
+
+    .navbar,.main-section,.footer-section{
+      padding: 2rem 1rem;
     }
 
     .trending-box .box{
